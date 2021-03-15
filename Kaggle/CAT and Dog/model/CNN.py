@@ -1,9 +1,7 @@
 import torch
 import torch.nn as nn
 
-
 class CNN(nn.Module):
-
     def __init__(self):
         super(CNN, self).__init__()
 
@@ -19,7 +17,7 @@ class CNN(nn.Module):
         )
 
         self.fc_layer = nn.Sequential(
-            nn.Linear(64*21*21, 100),
+            nn.Linear(64 * 21 * 21, 100),
             nn.ReLU(),
             nn.Linear(100, 10),
             nn.ReLU(),
@@ -28,4 +26,6 @@ class CNN(nn.Module):
 
     def forward(self, x):
         out = self.layer(x)
+        out = out.view(x.size(0), -1)
+        out = self.fc_layer(out)
         return out
