@@ -124,7 +124,7 @@ def experiment(net, partition, args):
             '{:2.2f}/{:2.2f}. '
             'Took {:2.2f} sec'.format(epoch, train_acc, val_acc, train_loss, val_loss, te - ts))
 
-        # ======= Add Result to Dictionary ======= #
+    # ======= Add Result to Dictionary ======= #
     result = {}
     result['train_losses'] = train_losses
     result['val_losses'] = val_losses
