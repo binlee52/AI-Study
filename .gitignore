@@ -1,3 +1,9 @@
+datasets/
+__pycache__/
+*.xml
+.ipynb_checkpoints/
+.idea/
+results/
 
 파이토치 첫걸음/.ipynb_checkpoints/ch05-checkpoint.ipynb
 Kaggle/Titanic - Machine Learning from Disaster/.ipynb_checkpoints/Titanic - Machine Learning from Disaster-checkpoint.ipynb
