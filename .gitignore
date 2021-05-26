@@ -5,3 +5,4 @@ __pycache__/
 .idea/
 results/
 dataset/
+*/dataset/
